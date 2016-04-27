@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000C2E095F99BC9DB1F4BA96 /* Pods_Smash_SmashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B3AAF3D3AEFFABEBB0A446 /* Pods_Smash_SmashUITests.framework */; };
+		652F0DDC01F125AF616DD3E9 /* Pods_Smash_SmashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A232C4CF0D7E107B0D252E /* Pods_Smash_SmashTests.framework */; };
+		674CEF751CD1723400AD084D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEF741CD1723400AD084D /* AppDelegate.swift */; };
+		674CEF7A1CD1723400AD084D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674CEF781CD1723400AD084D /* Main.storyboard */; };
+		674CEF7C1CD1723400AD084D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674CEF7B1CD1723400AD084D /* Assets.xcassets */; };
+		674CEF7F1CD1723400AD084D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674CEF7D1CD1723400AD084D /* LaunchScreen.storyboard */; };
+		674CEF8A1CD1723400AD084D /* Smash_SmashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEF891CD1723400AD084D /* Smash_SmashTests.swift */; };
+		674CEF951CD1723400AD084D /* Smash_SmashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEF941CD1723400AD084D /* Smash_SmashUITests.swift */; };
+		674CEFA41CD1737F00AD084D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFA21CD1737F00AD084D /* GameScene.swift */; };
+		674CEFA51CD1737F00AD084D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFA31CD1737F00AD084D /* GameViewController.swift */; };
+		674CEFA71CD1751F00AD084D /* GameScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 674CEFA61CD1751F00AD084D /* GameScene.scn */; };
+		674CEFA91CD175AB00AD084D /* ScoreReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFA81CD175AB00AD084D /* ScoreReviewViewController.swift */; };
+		674CEFAC1CD1768500AD084D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFAB1CD1768500AD084D /* Player.swift */; };
+		674CEFB21CD17C7700AD084D /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFB11CD17C7700AD084D /* NewGameViewController.swift */; };
+		674CEFB41CD17CB600AD084D /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFB31CD17CB600AD084D /* LeaderboardTableViewController.swift */; };
+		674CEFB71CD17CCA00AD084D /* LeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFB61CD17CCA00AD084D /* LeaderCellTableViewCell.swift */; };
+		674CEFB91CD17CEE00AD084D /* LeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 674CEFB81CD17CEE00AD084D /* LeaderCell.xib */; };
+		674CEFBB1CD17F0600AD084D /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFBA1CD17F0600AD084D /* Leader.swift */; };
+		674CEFBD1CD17F5200AD084D /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFBC1CD17F5200AD084D /* GameStore.swift */; };
+		674CEFBE1CD1817500AD084D /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFBC1CD17F5200AD084D /* GameStore.swift */; };
+		674CEFBF1CD1817800AD084D /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFBA1CD17F0600AD084D /* Leader.swift */; };
+		674CEFC01CD1817A00AD084D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFAB1CD1768500AD084D /* Player.swift */; };
+		F217A27A15690A3D530E9CB1 /* Pods_Smash_Smash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3FBC324A76C7EE41823D5 /* Pods_Smash_Smash.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		674CEF861CD1723400AD084D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674CEF691CD1723400AD084D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674CEF701CD1723400AD084D;
+			remoteInfo = "Smash Smash";
+		};
+		674CEF911CD1723400AD084D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674CEF691CD1723400AD084D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674CEF701CD1723400AD084D;
+			remoteInfo = "Smash Smash";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06663659A3D40076BB5D3ABD /* Pods-Smash Smash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash Smash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smash Smash/Pods-Smash Smash.release.xcconfig"; sourceTree = "<group>"; };
+		22B3FBC324A76C7EE41823D5 /* Pods_Smash_Smash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smash_Smash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40961F009E5BA7AE5E572458 /* Pods-Smash Smash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash Smash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smash Smash/Pods-Smash Smash.debug.xcconfig"; sourceTree = "<group>"; };
+		44AF9C591FB7785B8886C3C1 /* Pods-Smash SmashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashTests/Pods-Smash SmashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		482B08B3890495F1D61C73CE /* Pods-Smash SmashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashUITests/Pods-Smash SmashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		674CEF711CD1723400AD084D /* Smash Smash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash Smash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		674CEF741CD1723400AD084D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		674CEF791CD1723400AD084D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		674CEF7B1CD1723400AD084D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		674CEF7E1CD1723400AD084D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		674CEF801CD1723400AD084D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674CEF851CD1723400AD084D /* Smash SmashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash SmashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		674CEF891CD1723400AD084D /* Smash_SmashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_SmashTests.swift; sourceTree = "<group>"; };
+		674CEF8B1CD1723400AD084D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674CEF901CD1723400AD084D /* Smash SmashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash SmashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		674CEF941CD1723400AD084D /* Smash_SmashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_SmashUITests.swift; sourceTree = "<group>"; };
+		674CEF961CD1723400AD084D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674CEFA21CD1737F00AD084D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		674CEFA31CD1737F00AD084D /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		674CEFA61CD1751F00AD084D /* GameScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GameScene.scn; sourceTree = "<group>"; };
+		674CEFA81CD175AB00AD084D /* ScoreReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreReviewViewController.swift; sourceTree = "<group>"; };
+		674CEFAB1CD1768500AD084D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		674CEFB11CD17C7700AD084D /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		674CEFB31CD17CB600AD084D /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+		674CEFB61CD17CCA00AD084D /* LeaderCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderCellTableViewCell.swift; sourceTree = "<group>"; };
+		674CEFB81CD17CEE00AD084D /* LeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderCell.xib; sourceTree = "<group>"; };
+		674CEFBA1CD17F0600AD084D /* Leader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
+		674CEFBC1CD17F5200AD084D /* GameStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		74B3AAF3D3AEFFABEBB0A446 /* Pods_Smash_SmashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smash_SmashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A78F16B622E225592D9BE43 /* Pods-Smash SmashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashTests/Pods-Smash SmashTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9A232C4CF0D7E107B0D252E /* Pods_Smash_SmashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smash_SmashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3927E373087F93BD27680F6 /* Pods-Smash SmashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashUITests/Pods-Smash SmashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		674CEF6E1CD1723400AD084D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F217A27A15690A3D530E9CB1 /* Pods_Smash_Smash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674CEF821CD1723400AD084D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652F0DDC01F125AF616DD3E9 /* Pods_Smash_SmashTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674CEF8D1CD1723400AD084D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000C2E095F99BC9DB1F4BA96 /* Pods_Smash_SmashUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		284BFDD17F67CC8CA635C742 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B3FBC324A76C7EE41823D5 /* Pods_Smash_Smash.framework */,
+				B9A232C4CF0D7E107B0D252E /* Pods_Smash_SmashTests.framework */,
+				74B3AAF3D3AEFFABEBB0A446 /* Pods_Smash_SmashUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		674CEF681CD1723400AD084D = {
+			isa = PBXGroup;
+			children = (
+				674CEF731CD1723400AD084D /* Smash Smash */,
+				674CEF881CD1723400AD084D /* Smash SmashTests */,
+				674CEF931CD1723400AD084D /* Smash SmashUITests */,
+				674CEF721CD1723400AD084D /* Products */,
+				8DA5B9B71B98D4A77CF06EA7 /* Pods */,
+				284BFDD17F67CC8CA635C742 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		674CEF721CD1723400AD084D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				674CEF711CD1723400AD084D /* Smash Smash.app */,
+				674CEF851CD1723400AD084D /* Smash SmashTests.xctest */,
+				674CEF901CD1723400AD084D /* Smash SmashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		674CEF731CD1723400AD084D /* Smash Smash */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFAD1CD17C4900AD084D /* Views */,
+				674CEFAA1CD1767500AD084D /* Models */,
+				674CEF741CD1723400AD084D /* AppDelegate.swift */,
+				674CEF781CD1723400AD084D /* Main.storyboard */,
+				674CEF7B1CD1723400AD084D /* Assets.xcassets */,
+				674CEF7D1CD1723400AD084D /* LaunchScreen.storyboard */,
+				674CEF801CD1723400AD084D /* Info.plist */,
+				674CEFA61CD1751F00AD084D /* GameScene.scn */,
+				674CEFA81CD175AB00AD084D /* ScoreReviewViewController.swift */,
+			);
+			path = "Smash Smash";
+			sourceTree = "<group>";
+		};
+		674CEF881CD1723400AD084D /* Smash SmashTests */ = {
+			isa = PBXGroup;
+			children = (
+				674CEF891CD1723400AD084D /* Smash_SmashTests.swift */,
+				674CEF8B1CD1723400AD084D /* Info.plist */,
+			);
+			path = "Smash SmashTests";
+			sourceTree = "<group>";
+		};
+		674CEF931CD1723400AD084D /* Smash SmashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				674CEF941CD1723400AD084D /* Smash_SmashUITests.swift */,
+				674CEF961CD1723400AD084D /* Info.plist */,
+			);
+			path = "Smash SmashUITests";
+			sourceTree = "<group>";
+		};
+		674CEFAA1CD1767500AD084D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFAB1CD1768500AD084D /* Player.swift */,
+				674CEFBA1CD17F0600AD084D /* Leader.swift */,
+				674CEFBC1CD17F5200AD084D /* GameStore.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		674CEFAD1CD17C4900AD084D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFB01CD17C6100AD084D /* Leaderboard View */,
+				674CEFAF1CD17C5400AD084D /* New Game View */,
+				674CEFAE1CD17C4C00AD084D /* Game View */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		674CEFAE1CD17C4C00AD084D /* Game View */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFA21CD1737F00AD084D /* GameScene.swift */,
+				674CEFA31CD1737F00AD084D /* GameViewController.swift */,
+			);
+			name = "Game View";
+			sourceTree = "<group>";
+		};
+		674CEFAF1CD17C5400AD084D /* New Game View */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFB11CD17C7700AD084D /* NewGameViewController.swift */,
+			);
+			name = "New Game View";
+			sourceTree = "<group>";
+		};
+		674CEFB01CD17C6100AD084D /* Leaderboard View */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFB51CD17CB900AD084D /* Cells */,
+				674CEFB31CD17CB600AD084D /* LeaderboardTableViewController.swift */,
+			);
+			name = "Leaderboard View";
+			sourceTree = "<group>";
+		};
+		674CEFB51CD17CB900AD084D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				674CEFB61CD17CCA00AD084D /* LeaderCellTableViewCell.swift */,
+				674CEFB81CD17CEE00AD084D /* LeaderCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8DA5B9B71B98D4A77CF06EA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40961F009E5BA7AE5E572458 /* Pods-Smash Smash.debug.xcconfig */,
+				06663659A3D40076BB5D3ABD /* Pods-Smash Smash.release.xcconfig */,
+				44AF9C591FB7785B8886C3C1 /* Pods-Smash SmashTests.debug.xcconfig */,
+				8A78F16B622E225592D9BE43 /* Pods-Smash SmashTests.release.xcconfig */,
+				F3927E373087F93BD27680F6 /* Pods-Smash SmashUITests.debug.xcconfig */,
+				482B08B3890495F1D61C73CE /* Pods-Smash SmashUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		674CEF701CD1723400AD084D /* Smash Smash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674CEF991CD1723400AD084D /* Build configuration list for PBXNativeTarget "Smash Smash" */;
+			buildPhases = (
+				FF7ED62A5CC4EB68CFCB7FC3 /* Check Pods Manifest.lock */,
+				674CEF6D1CD1723400AD084D /* Sources */,
+				674CEF6E1CD1723400AD084D /* Frameworks */,
+				674CEF6F1CD1723400AD084D /* Resources */,
+				C8982389D513386D13147C5F /* Embed Pods Frameworks */,
+				DEB8E64770ACC69559E1380C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smash Smash";
+			productName = "Smash Smash";
+			productReference = 674CEF711CD1723400AD084D /* Smash Smash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		674CEF841CD1723400AD084D /* Smash SmashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674CEF9C1CD1723400AD084D /* Build configuration list for PBXNativeTarget "Smash SmashTests" */;
+			buildPhases = (
+				6C699DD9541A86C44F9C9F54 /* Check Pods Manifest.lock */,
+				674CEF811CD1723400AD084D /* Sources */,
+				674CEF821CD1723400AD084D /* Frameworks */,
+				674CEF831CD1723400AD084D /* Resources */,
+				D3F38B36CA4FA3AAF0D86D28 /* Embed Pods Frameworks */,
+				AE729CBADFBD4282C2CB2576 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674CEF871CD1723400AD084D /* PBXTargetDependency */,
+			);
+			name = "Smash SmashTests";
+			productName = "Smash SmashTests";
+			productReference = 674CEF851CD1723400AD084D /* Smash SmashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		674CEF8F1CD1723400AD084D /* Smash SmashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674CEF9F1CD1723400AD084D /* Build configuration list for PBXNativeTarget "Smash SmashUITests" */;
+			buildPhases = (
+				8AD0BDAA060A95394D1E34D7 /* Check Pods Manifest.lock */,
+				674CEF8C1CD1723400AD084D /* Sources */,
+				674CEF8D1CD1723400AD084D /* Frameworks */,
+				674CEF8E1CD1723400AD084D /* Resources */,
+				23B72C7E2B887F9EB7799F40 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674CEF921CD1723400AD084D /* PBXTargetDependency */,
+			);
+			name = "Smash SmashUITests";
+			productName = "Smash SmashUITests";
+			productReference = 674CEF901CD1723400AD084D /* Smash SmashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		674CEF691CD1723400AD084D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Timothy Barrett";
+				TargetAttributes = {
+					674CEF701CD1723400AD084D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZL97M23RXJ;
+					};
+					674CEF841CD1723400AD084D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZL97M23RXJ;
+						TestTargetID = 674CEF701CD1723400AD084D;
+					};
+					674CEF8F1CD1723400AD084D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZL97M23RXJ;
+						TestTargetID = 674CEF701CD1723400AD084D;
+					};
+				};
+			};
+			buildConfigurationList = 674CEF6C1CD1723400AD084D /* Build configuration list for PBXProject "Smash Smash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 674CEF681CD1723400AD084D;
+			productRefGroup = 674CEF721CD1723400AD084D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				674CEF701CD1723400AD084D /* Smash Smash */,
+				674CEF841CD1723400AD084D /* Smash SmashTests */,
+				674CEF8F1CD1723400AD084D /* Smash SmashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		674CEF6F1CD1723400AD084D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674CEF7F1CD1723400AD084D /* LaunchScreen.storyboard in Resources */,
+				674CEF7C1CD1723400AD084D /* Assets.xcassets in Resources */,
+				674CEF7A1CD1723400AD084D /* Main.storyboard in Resources */,
+				674CEFA71CD1751F00AD084D /* GameScene.scn in Resources */,
+				674CEFB91CD17CEE00AD084D /* LeaderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674CEF831CD1723400AD084D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674CEF8E1CD1723400AD084D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23B72C7E2B887F9EB7799F40 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smash SmashUITests/Pods-Smash SmashUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C699DD9541A86C44F9C9F54 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD0BDAA060A95394D1E34D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE729CBADFBD4282C2CB2576 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smash SmashTests/Pods-Smash SmashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8982389D513386D13147C5F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smash Smash/Pods-Smash Smash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F38B36CA4FA3AAF0D86D28 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smash SmashTests/Pods-Smash SmashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB8E64770ACC69559E1380C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smash Smash/Pods-Smash Smash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF7ED62A5CC4EB68CFCB7FC3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		674CEF6D1CD1723400AD084D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674CEFB71CD17CCA00AD084D /* LeaderCellTableViewCell.swift in Sources */,
+				674CEFA51CD1737F00AD084D /* GameViewController.swift in Sources */,
+				674CEFA41CD1737F00AD084D /* GameScene.swift in Sources */,
+				674CEFBD1CD17F5200AD084D /* GameStore.swift in Sources */,
+				674CEFB41CD17CB600AD084D /* LeaderboardTableViewController.swift in Sources */,
+				674CEF751CD1723400AD084D /* AppDelegate.swift in Sources */,
+				674CEFBB1CD17F0600AD084D /* Leader.swift in Sources */,
+				674CEFAC1CD1768500AD084D /* Player.swift in Sources */,
+				674CEFA91CD175AB00AD084D /* ScoreReviewViewController.swift in Sources */,
+				674CEFB21CD17C7700AD084D /* NewGameViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674CEF811CD1723400AD084D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674CEFC01CD1817A00AD084D /* Player.swift in Sources */,
+				674CEF8A1CD1723400AD084D /* Smash_SmashTests.swift in Sources */,
+				674CEFBE1CD1817500AD084D /* GameStore.swift in Sources */,
+				674CEFBF1CD1817800AD084D /* Leader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674CEF8C1CD1723400AD084D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674CEF951CD1723400AD084D /* Smash_SmashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		674CEF871CD1723400AD084D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674CEF701CD1723400AD084D /* Smash Smash */;
+			targetProxy = 674CEF861CD1723400AD084D /* PBXContainerItemProxy */;
+		};
+		674CEF921CD1723400AD084D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674CEF701CD1723400AD084D /* Smash Smash */;
+			targetProxy = 674CEF911CD1723400AD084D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		674CEF781CD1723400AD084D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				674CEF791CD1723400AD084D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		674CEF7D1CD1723400AD084D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				674CEF7E1CD1723400AD084D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		674CEF971CD1723400AD084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		674CEF981CD1723400AD084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		674CEF9A1CD1723400AD084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40961F009E5BA7AE5E572458 /* Pods-Smash Smash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smash Smash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-Smash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		674CEF9B1CD1723400AD084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06663659A3D40076BB5D3ABD /* Pods-Smash Smash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smash Smash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-Smash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		674CEF9D1CD1723400AD084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AF9C591FB7785B8886C3C1 /* Pods-Smash SmashTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smash SmashTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-SmashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smash Smash.app/Smash Smash";
+			};
+			name = Debug;
+		};
+		674CEF9E1CD1723400AD084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A78F16B622E225592D9BE43 /* Pods-Smash SmashTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smash SmashTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-SmashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smash Smash.app/Smash Smash";
+			};
+			name = Release;
+		};
+		674CEFA01CD1723400AD084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3927E373087F93BD27680F6 /* Pods-Smash SmashUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Smash SmashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-SmashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smash Smash";
+			};
+			name = Debug;
+		};
+		674CEFA11CD1723400AD084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482B08B3890495F1D61C73CE /* Pods-Smash SmashUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Smash SmashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-SmashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smash Smash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		674CEF6C1CD1723400AD084D /* Build configuration list for PBXProject "Smash Smash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674CEF971CD1723400AD084D /* Debug */,
+				674CEF981CD1723400AD084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674CEF991CD1723400AD084D /* Build configuration list for PBXNativeTarget "Smash Smash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674CEF9A1CD1723400AD084D /* Debug */,
+				674CEF9B1CD1723400AD084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674CEF9C1CD1723400AD084D /* Build configuration list for PBXNativeTarget "Smash SmashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674CEF9D1CD1723400AD084D /* Debug */,
+				674CEF9E1CD1723400AD084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674CEF9F1CD1723400AD084D /* Build configuration list for PBXNativeTarget "Smash SmashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674CEFA01CD1723400AD084D /* Debug */,
+				674CEFA11CD1723400AD084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 674CEF691CD1723400AD084D /* Project object */;
+}

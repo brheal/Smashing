@@ -1,0 +1,6 @@
+framework module Pods_Smash_SmashTests {
+  umbrella header "Pods-Smash SmashTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
