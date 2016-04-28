@@ -79,7 +79,18 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2Uj-PH-khD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2Uj-PH-khD" secondAttribute="bottom" id="0yS-fL-OSE"/>
+                            <constraint firstItem="2Uj-PH-khD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ALV-ak-TK3"/>
+                            <constraint firstAttribute="trailing" secondItem="2Uj-PH-khD" secondAttribute="trailing" id="GEs-w1-XQg"/>
+                            <constraint firstItem="2Uj-PH-khD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f1I-c0-r9h"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="s5T-FW-51y" kind="presentation" identifier="showFinalScore" id="ORQ-UA-Xau"/>
@@ -231,6 +242,9 @@
             <point key="canvasLocation" x="1446" y="159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="2000" height="1319"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kf1-C2-iBI"/>
     </inferredMetricsTieBreakers>
