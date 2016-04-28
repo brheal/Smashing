@@ -11,8 +11,7 @@ protocol GameSceneDelegate:class {
     func gameHasFinished(withFinalScore score:Int, scene:GameScene)
 }
 class GameScene: SKScene {
-    let backgroundMusic = SKAudioNode(fileNamed: "bieberMusicCut.m4a")
-
+    var backgroundMusic:SKAudioNode? = SKAudioNode(fileNamed: "bieberMusicCut.m4a")
     var target = SKSpriteNode(imageNamed: "bieberFace")
     var score = 0
     var seconds = 30
@@ -43,8 +42,8 @@ class GameScene: SKScene {
         target.name = "target"
         target.userInteractionEnabled = false
         
-        addChild(backgroundMusic);
-
+        runAction(SKAction.playSoundFileNamed("bieberMusicCut.m4a", waitForCompletion: false))
+        
         startGame()
     }
     
@@ -81,9 +80,12 @@ class GameScene: SKScene {
         if node.name == "target" {
             runAction(SKAction.playSoundFileNamed("PrinceScream.m4a", waitForCompletion: false))
             score += 1
-            labelScore.text = "\(score)"
             moveTarget()
+        } else {
+            score -= 1
         }
+        
+        labelScore.text = "\(score)"
     }
     
     func startGame() {
@@ -94,9 +96,6 @@ class GameScene: SKScene {
                 // This happens when the time expires 
             self.gameOver()
         }
-        
-        
-        
     }
     
     
@@ -106,9 +105,6 @@ class GameScene: SKScene {
     }
     
     func gameOver() {
-        //stop music
-        backgroundMusic.runAction(SKAction.stop())
-        
         labelClock.removeAllActions()
         gsDelegate?.gameHasFinished(withFinalScore: score, scene: self)
     }
