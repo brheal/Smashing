@@ -155,7 +155,6 @@
 				674CEF7D1CD1723400AD084D /* LaunchScreen.storyboard */,
 				674CEF801CD1723400AD084D /* Info.plist */,
 				674CEFA61CD1751F00AD084D /* GameScene.scn */,
-				674CEFA81CD175AB00AD084D /* ScoreReviewViewController.swift */,
 			);
 			path = "Smash Smash";
 			sourceTree = "<group>";
@@ -191,6 +190,7 @@
 		674CEFAD1CD17C4900AD084D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				674CEFA81CD175AB00AD084D /* ScoreReviewViewController.swift */,
 				674CEFB01CD17C6100AD084D /* Leaderboard View */,
 				674CEFAF1CD17C5400AD084D /* New Game View */,
 				674CEFAE1CD17C4C00AD084D /* Game View */,

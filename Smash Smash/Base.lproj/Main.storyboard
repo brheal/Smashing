@@ -133,7 +133,7 @@
                     </view>
                     <connections>
                         <outlet property="finalScoreLabel" destination="OfI-yo-sSj" id="SfM-wz-WTA"/>
-                        <segue destination="mEB-n6-Mlp" kind="presentation" modalTransitionStyle="crossDissolve" id="GSh-Tu-6TO"/>
+                        <segue destination="mEB-n6-Mlp" kind="presentation" identifier="showLeaderboard" modalTransitionStyle="crossDissolve" id="GSh-Tu-6TO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEi-xQ-cRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,11 +164,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="i2f-a1-wyq">
-                        <barButtonItem key="rightBarButtonItem" title="New Game" id="IlD-QQ-oWj"/>
+                        <barButtonItem key="rightBarButtonItem" title="New Game" id="IlD-QQ-oWj">
+                            <connections>
+                                <action selector="newGamePressed:" destination="ljF-kt-0x4" id="uU8-xD-R7G"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="mpB-eq-1e2">
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
+                    <connections>
+                        <segue destination="2vb-e3-9lZ" kind="presentation" identifier="showNewPlayerScreen" modalTransitionStyle="crossDissolve" id="6To-RZ-yGV"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showNewGame" id="kf1-C2-iBI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVE-0g-Ipi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,4 +199,7 @@
             <point key="canvasLocation" x="1446" y="159"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kf1-C2-iBI"/>
+    </inferredMetricsTieBreakers>
 </document>

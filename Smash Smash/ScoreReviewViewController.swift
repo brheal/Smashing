@@ -27,6 +27,17 @@ class ScoreReviewViewController: UIViewController {
     
     @IBAction func uploadPressed(sender: AnyObject) {
         // upload final score to parse
+        if Player.currentPlayer.playerName != nil {
+            GameStore.shared.uploadScore(withPlayerName: Player.currentPlayer.playerName!, withScore: Player.currentPlayer.finalScore, completion: { (success, err) in
+                if err == nil && success {
+                    // go to leaderboard
+                    self.performSegueWithIdentifier("showLeaderboard", sender: nil)
+                } else {
+                    // show error
+                    self.performSegueWithIdentifier("showLeaderboard", sender: nil)
+                }
+            })
+        }
         
         // show leader board screen
     }

@@ -67,6 +67,31 @@ class LeaderboardTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func newGamePressed(sender: AnyObject) {
+        if Player.currentPlayer.playerName != nil {
+            let alertVC = UIAlertController(title: "New Game", message: "Would you like to continue as \(Player.currentPlayer.playerName!) or start a new game as a new player?", preferredStyle: .Alert)
+            let newPlayerAction = UIAlertAction(title: "New Player", style: .Default, handler: { (action) in
+                // go to new player screen
+                Player.currentPlayer.resetPlayer()
+                self.performSegueWithIdentifier("showNewPlayerScreen", sender: nil)
+                
+            })
+            let continueAction = UIAlertAction(title: "Continue", style: .Default, handler: { (action) in
+                // start new game as same player
+                Player.currentPlayer.updatePlayerScore(withNewScore: 0)
+                self.performSegueWithIdentifier("showNewGame", sender: nil)
+            })
+            alertVC.addAction(newPlayerAction)
+            alertVC.addAction(continueAction)
+            self.presentViewController(alertVC, animated: true, completion: nil)
+        } else {
+            // somehow no playername was given just go back to main screen
+            Player.currentPlayer.resetPlayer()
+            self.performSegueWithIdentifier("showNewPlayerScreen", sender: nil)
+            
+        }
+
+    }
     
     func reloadData() {
         // reload data from parse
