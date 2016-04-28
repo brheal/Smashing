@@ -13,7 +13,6 @@ protocol GameSceneDelegate:class {
 class GameScene: SKScene {
     let backgroundMusic = SKAudioNode(fileNamed: "bieberMusicCut.m4a")
 
-
     var target = SKSpriteNode(imageNamed: "bieberFace")
     var score = 0
     var seconds = 30
@@ -80,6 +79,7 @@ class GameScene: SKScene {
         let node = self.nodeAtPoint(location)
         
         if node.name == "target" {
+            runAction(SKAction.playSoundFileNamed("PrinceScream.m4a", waitForCompletion: false))
             score += 1
             labelScore.text = "\(score)"
             moveTarget()
