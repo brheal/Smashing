@@ -14,8 +14,8 @@ class GameScene: SKScene {
     // 1
     var target = SKSpriteNode(imageNamed: "bieberFace")
     var score = 0
-    var seconds = 8
-    let limitTime = 8
+    var seconds = 30
+    let limitTime = 30
     var labelClock = SKLabelNode()
     var labelScore = SKLabelNode()
     var gsDelegate:GameSceneDelegate?
