@@ -42,6 +42,8 @@ class ScoreReviewViewController: UIViewController {
                     self.performSegueWithIdentifier("showLeaderboard", sender: nil)
                 }
             })
+        } else {
+            self.performSegueWithIdentifier("showLeaderboard", sender: nil)
         }
         
         // show leader board screen
