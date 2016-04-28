@@ -10,6 +10,7 @@ import UIKit
 
 class NewGameViewController: UIViewController {
 
+    @IBOutlet weak var playerNameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +32,34 @@ class NewGameViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func startGamePressed(sender: AnyObject) {
+        if validatePlayerName() {
+            self.performSegueWithIdentifier("startGame", sender: nil)
+        } else {
+            let alertVC = UIAlertController(title: "Ugghhh", message: "You have to enter a player name to play otherwise we won't know who smashed Beiber the most!", preferredStyle: .Alert)
+            let okayAction = UIAlertAction(title: "Fine, Fine!", style: .Default, handler: nil)
+            alertVC.addAction(okayAction)
+            self.presentViewController(alertVC, animated: true, completion: nil)
+        }
+    }
 
+}
+
+extension NewGameViewController : UITextFieldDelegate {
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        return true
+    }
+    
+    func validatePlayerName() -> Bool {
+        print(playerNameField.text)
+        var playerName = playerNameField.text
+        if playerName != nil {
+            playerName = playerName!.stringByReplacingOccurrencesOfString(" ", withString: "")
+            if playerName!.characters.count > 0 {
+                Player.currentPlayer.updatePlayerName(withNewName: playerNameField.text!)
+                return true
+            }
+        }
+        return false
+    }
 }
