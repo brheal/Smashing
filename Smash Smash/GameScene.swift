@@ -32,7 +32,7 @@ class GameScene: SKScene {
     var score = 0
     var seconds = 30
     let limitTime = 30
-    let mileyBonusScore = 45
+    let mileyBonusScore = 40
     var labelClock = SKLabelNode()
     var labelScore = SKLabelNode()
     var labelBonus = SKLabelNode()

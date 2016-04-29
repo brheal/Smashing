@@ -191,7 +191,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="159"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Leaderboard-->
         <scene sceneID="ffv-Ah-iPG">
             <objects>
                 <tableViewController id="ljF-kt-0x4" customClass="LeaderboardTableViewController" customModule="Smash_Smash" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +214,7 @@
                             <outlet property="delegate" destination="ljF-kt-0x4" id="ggs-v0-hJ1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="i2f-a1-wyq">
+                    <navigationItem key="navigationItem" title="Leaderboard" id="i2f-a1-wyq">
                         <barButtonItem key="rightBarButtonItem" title="New Game" id="IlD-QQ-oWj">
                             <connections>
                                 <action selector="newGamePressed:" destination="ljF-kt-0x4" id="uU8-xD-R7G"/>
@@ -255,6 +255,6 @@
         <image name="bieberFace" width="151" height="151"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bjZ-ql-jEP"/>
+        <segue reference="kf1-C2-iBI"/>
     </inferredMetricsTieBreakers>
 </document>
