@@ -9,21 +9,27 @@
 import UIKit
 import SpriteKit
 class GameViewController: UIViewController {
-    
+    var scene:GameScene?
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scene = GameScene(size: view.bounds.size)
+        scene = GameScene(size: view.bounds.size)
+        scene?.backgroundColor = UIColor.clearColor()
         let skView = view as! SKView
-        scene.gsDelegate = self
+        scene?.gsDelegate = self
         skView.showsFPS = true
         skView.showsNodeCount = true
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .ResizeFill
+        scene?.scaleMode = .ResizeFill
         skView.presentScene(scene)
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        scene = nil
     }
 
 }

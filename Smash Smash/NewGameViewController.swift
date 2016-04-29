@@ -7,13 +7,18 @@
 //
 
 import UIKit
-
+@IBDesignable
 class NewGameViewController: UIViewController {
-
+    @IBInspectable var borderColor:UIColor = UIColor.orangeColor()
+    
+    @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var playerNameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startBtn.layer.cornerRadius = 8.0
+        startBtn.layer.borderWidth = 1.0
+        startBtn.layer.borderColor = borderColor.CGColor
+        playerNameField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -47,6 +52,11 @@ class NewGameViewController: UIViewController {
 
 extension NewGameViewController : UITextFieldDelegate {
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         return true
     }
     
