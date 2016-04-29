@@ -11,14 +11,34 @@ protocol GameSceneDelegate:class {
     func gameHasFinished(withFinalScore score:Int, scene:GameScene)
 }
 class GameScene: SKScene {
-    var backgroundMusic:SKAudioNode? = SKAudioNode(fileNamed: "bieberMusicCut.m4a")
+    
+    func pickMusic() -> String {
+        let musicPick = Int(arc4random_uniform(UInt32(3)))
+        
+        if musicPick == 1 {
+            return "bieberMusicCut.m4a"
+        } else if musicPick == 2 {
+            return "bieberMusicCut2.m4a"
+        } else {
+            return "turnDown.m4a"
+        }
+    }
+
+    
+    
     var target = SKSpriteNode(imageNamed: "bieberFace")
+    var inBonus = false
+    var pointValue = 1
     var score = 0
     var seconds = 30
     let limitTime = 30
+    let mileyBonusScore = 45
     var labelClock = SKLabelNode()
     var labelScore = SKLabelNode()
+    var labelBonus = SKLabelNode()
+    
     var gsDelegate:GameSceneDelegate?
+
     override func didMoveToView(view: SKView) {
         self.scaleMode = SKSceneScaleMode.ResizeFill
         // 2
@@ -36,13 +56,20 @@ class GameScene: SKScene {
         labelScore.position = CGPoint(x: size.width * 0.1, y: size.height * 0.9 )
         labelScore.fontColor = UIColor.greenColor()
         labelScore.fontSize = 80
-        
         addChild(labelScore)
+        
+        labelBonus.position = CGPoint(x: size.width * 0.8, y: size.height * 0.9 )
+        labelBonus.fontColor = UIColor.magentaColor()
+        labelBonus.fontSize = 60
+        labelBonus.text = "Miley Bonus!"
+        labelBonus.hidden = true
+        addChild(labelBonus)
+        
         
         target.name = "target"
         target.userInteractionEnabled = false
         
-        runAction(SKAction.playSoundFileNamed("bieberMusicCut.m4a", waitForCompletion: false))
+        runAction(SKAction.playSoundFileNamed(pickMusic(), waitForCompletion: false))
         
         startGame()
     }
@@ -79,11 +106,20 @@ class GameScene: SKScene {
         
         if node.name == "target" {
             runAction(SKAction.playSoundFileNamed("PrinceScream.m4a", waitForCompletion: false))
-            score += 1
+            score += pointValue
             moveTarget()
         } else {
             score -= 1
         }
+        
+        //check for bonus
+        if !inBonus && (score > mileyBonusScore) {
+            inBonus = true
+            labelBonus.hidden = false
+            target.texture = SKTexture(imageNamed: "mileyFace")
+            pointValue = 2
+        }
+        
         
         labelScore.text = "\(score)"
     }

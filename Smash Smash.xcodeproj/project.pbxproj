@@ -31,6 +31,8 @@
 		674CEFC01CD1817A00AD084D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFAB1CD1768500AD084D /* Player.swift */; };
 		93970AA11CD1BD78008B1BF4 /* bieberMusicCut.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA01CD1BD78008B1BF4 /* bieberMusicCut.m4a */; };
 		93970AA31CD1C41A008B1BF4 /* PrinceScream.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA21CD1C41A008B1BF4 /* PrinceScream.m4a */; };
+		93970AA51CD2F20E008B1BF4 /* bieberMusicCut2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA41CD2F20E008B1BF4 /* bieberMusicCut2.m4a */; };
+		93970AA71CD2F7D1008B1BF4 /* turnDown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA61CD2F7D1008B1BF4 /* turnDown.m4a */; };
 		F217A27A15690A3D530E9CB1 /* Pods_Smash_Smash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3FBC324A76C7EE41823D5 /* Pods_Smash_Smash.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		8A78F16B622E225592D9BE43 /* Pods-Smash SmashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashTests/Pods-Smash SmashTests.release.xcconfig"; sourceTree = "<group>"; };
 		93970AA01CD1BD78008B1BF4 /* bieberMusicCut.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bieberMusicCut.m4a; sourceTree = "<group>"; };
 		93970AA21CD1C41A008B1BF4 /* PrinceScream.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = PrinceScream.m4a; sourceTree = "<group>"; };
+		93970AA41CD2F20E008B1BF4 /* bieberMusicCut2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bieberMusicCut2.m4a; sourceTree = "<group>"; };
+		93970AA61CD2F7D1008B1BF4 /* turnDown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = turnDown.m4a; sourceTree = "<group>"; };
 		B9A232C4CF0D7E107B0D252E /* Pods_Smash_SmashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smash_SmashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3927E373087F93BD27680F6 /* Pods-Smash SmashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashUITests/Pods-Smash SmashUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +133,8 @@
 		674CEF681CD1723400AD084D = {
 			isa = PBXGroup;
 			children = (
+				93970AA61CD2F7D1008B1BF4 /* turnDown.m4a */,
+				93970AA41CD2F20E008B1BF4 /* bieberMusicCut2.m4a */,
 				93970AA21CD1C41A008B1BF4 /* PrinceScream.m4a */,
 				93970AA01CD1BD78008B1BF4 /* bieberMusicCut.m4a */,
 				674CEF731CD1723400AD084D /* Smash Smash */,
@@ -328,7 +334,7 @@
 				TargetAttributes = {
 					674CEF701CD1723400AD084D = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = ZL97M23RXJ;
+						DevelopmentTeam = BMAQ4P3858;
 					};
 					674CEF841CD1723400AD084D = {
 						CreatedOnToolsVersion = 7.3;
@@ -368,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				674CEF7F1CD1723400AD084D /* LaunchScreen.storyboard in Resources */,
+				93970AA71CD2F7D1008B1BF4 /* turnDown.m4a in Resources */,
 				674CEF7C1CD1723400AD084D /* Assets.xcassets in Resources */,
 				93970AA11CD1BD78008B1BF4 /* bieberMusicCut.m4a in Resources */,
+				93970AA51CD2F20E008B1BF4 /* bieberMusicCut2.m4a in Resources */,
 				674CEF7A1CD1723400AD084D /* Main.storyboard in Resources */,
 				93970AA31CD1C41A008B1BF4 /* PrinceScream.m4a in Resources */,
 				674CEFA71CD1751F00AD084D /* GameScene.scn in Resources */,
@@ -678,9 +686,10 @@
 			baseConfigurationReference = 40961F009E5BA7AE5E572458 /* Pods-Smash Smash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Smash Smash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-Smash";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brheal.Smash-Smash";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -690,9 +699,10 @@
 			baseConfigurationReference = 06663659A3D40076BB5D3ABD /* Pods-Smash Smash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Smash Smash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tsb.Smash-Smash";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brheal.Smash-Smash";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
