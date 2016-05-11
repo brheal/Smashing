@@ -29,10 +29,10 @@ class GameScene: SKScene {
     var target = SKSpriteNode(imageNamed: "bieberFace")
     var inBonus = false
     var pointValue = 1
-    var score = 0
+    var score = -4
     var seconds = 30
     let limitTime = 30
-    let mileyBonusScore = 40
+    let mileyBonusScore = 25
     var labelClock = SKLabelNode()
     var labelScore = SKLabelNode()
     var labelBonus = SKLabelNode()
@@ -85,8 +85,11 @@ class GameScene: SKScene {
     func moveTarget() {
         
         // Determine where to spawn the target along the Y axis
-        let actualY = random(min: target.size.height/2, max: size.height - target.size.height/2)
-        
+        var actualY = random(min: target.size.height/2, max: size.height - target.size.height/2)
+        print(actualY)
+        if actualY > size.height - 100 {
+            actualY -= 100
+        }
         // Determine where to spawn the target along the X axis
         let actualX = random(min: target.size.width/2, max: size.width - target.size.width/2)
         
@@ -125,7 +128,7 @@ class GameScene: SKScene {
     }
     
     func startGame() {
-        score = 0
+        score = -4
         labelClock.text = "\(seconds)"
         labelScore.text = "0"
         labelClock.runAction(SKAction.repeatAction(SKAction.sequence([SKAction.waitForDuration(1), SKAction.runBlock({ self.timer()})]), count: limitTime)) {
