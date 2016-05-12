@@ -10,9 +10,11 @@ import UIKit
 import SpriteKit
 class GameViewController: UIViewController {
     var scene:GameScene?
+    var enemy:Enemy?
     override func viewDidLoad() {
         super.viewDidLoad()
         scene = GameScene(size: view.bounds.size)
+        scene?.enemy = enemy
         scene?.backgroundColor = UIColor.clearColor()
         let skView = view as! SKView
         scene?.gsDelegate = self

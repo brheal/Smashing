@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2vb-e3-9lZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2vb-e3-9lZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -47,6 +47,13 @@
                                     <action selector="startGamePressed:" destination="2vb-e3-9lZ" eventType="touchUpInside" id="l3I-bH-1vS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUn-Ax-4y2">
+                                <rect key="frame" x="251" y="223" width="99" height="30"/>
+                                <state key="normal" title="Change Image"/>
+                                <connections>
+                                    <action selector="takeImagePressed:" destination="2vb-e3-9lZ" eventType="touchUpInside" id="n3I-1V-n5d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -64,9 +71,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dxr-1m-fq2" secondAttribute="trailing" id="iTv-o6-dIe"/>
                             <constraint firstItem="fYJ-9p-eHn" firstAttribute="top" secondItem="dxr-1m-fq2" secondAttribute="bottom" constant="8" id="jKS-1H-rb2"/>
                             <constraint firstItem="dxr-1m-fq2" firstAttribute="top" secondItem="Mgr-2w-9rk" secondAttribute="bottom" constant="8" id="qD5-l8-rxX"/>
+                            <constraint firstItem="cUn-Ax-4y2" firstAttribute="top" secondItem="fYJ-9p-eHn" secondAttribute="bottom" constant="8" id="rSM-6V-xix"/>
+                            <constraint firstItem="cUn-Ax-4y2" firstAttribute="centerX" secondItem="AI2-1c-Ach" secondAttribute="centerX" id="ttQ-kG-rMk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="enemyImage" destination="fYJ-9p-eHn" id="aOJ-Su-N1b"/>
                         <outlet property="playerNameField" destination="2i3-jK-bPr" id="iM6-M1-yRv"/>
                         <outlet property="startBtn" destination="BD4-Uc-4Mc" id="Pgy-Pi-9l4"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="startGame" modalTransitionStyle="crossDissolve" id="bjZ-ql-jEP"/>

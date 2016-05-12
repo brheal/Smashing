@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Smash SmashTests/Bolts.framework"
   install_framework "Pods-Smash SmashTests/Parse.framework"
+  install_framework "Pods-Smash SmashTests/UIImage_Resize.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Smash SmashTests/Bolts.framework"
   install_framework "Pods-Smash SmashTests/Parse.framework"
+  install_framework "Pods-Smash SmashTests/UIImage_Resize.framework"
 fi

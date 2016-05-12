@@ -11,8 +11,11 @@ import UIKit
 class NewGameViewController: UIViewController {
     @IBInspectable var borderColor:UIColor = UIColor.orangeColor()
     
+    @IBOutlet weak var enemyImage: UIImageView!
     @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var playerNameField: UITextField!
+    let imagePicker = UIImagePickerController()
+    private var enemy:Enemy?
     override func viewDidLoad() {
         super.viewDidLoad()
         startBtn.layer.cornerRadius = 8.0
@@ -28,15 +31,30 @@ class NewGameViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "startGame" {
+            if let destination = segue.destinationViewController as? GameViewController {
+                destination.enemy = enemy
+            }
+        }
     }
-    */
+    
+    @IBAction func takeImagePressed(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            if UIImagePickerController.availableCaptureModesForCameraDevice(.Front) != nil {
+                imagePicker.allowsEditing = false
+                imagePicker.delegate = self
+                imagePicker.sourceType = .Camera
+                imagePicker.cameraCaptureMode = .Photo
+                presentViewController(imagePicker, animated: true, completion: nil)
+            }
+        }
+    }
+ 
     @IBAction func startGamePressed(sender: AnyObject) {
         if validatePlayerName() {
             self.performSegueWithIdentifier("startGame", sender: nil)
@@ -50,7 +68,7 @@ class NewGameViewController: UIViewController {
 
 }
 
-extension NewGameViewController : UITextFieldDelegate {
+extension NewGameViewController : UITextFieldDelegate, UINavigationControllerDelegate {
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         return true
     }
@@ -72,4 +90,19 @@ extension NewGameViewController : UITextFieldDelegate {
         }
         return false
     }
+}
+
+extension NewGameViewController : UIImagePickerControllerDelegate {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let pickedImage:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            enemy = Enemy(withImage: pickedImage)
+            enemyImage.image = enemy?.getEnemyImage()
+        }
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }

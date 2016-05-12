@@ -5,6 +5,7 @@
 
 def import_pods
    pod 'Parse'
+   pod 'UIImage-Resize'
 end
 
 target 'Smash Smash' do

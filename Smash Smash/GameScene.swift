@@ -11,7 +11,7 @@ protocol GameSceneDelegate:class {
     func gameHasFinished(withFinalScore score:Int, scene:GameScene)
 }
 class GameScene: SKScene {
-    
+    var enemy:Enemy?
     func pickMusic() -> String {
         let musicPick = Int(arc4random_uniform(UInt32(3)))
         
@@ -40,6 +40,11 @@ class GameScene: SKScene {
     var gsDelegate:GameSceneDelegate?
 
     override func didMoveToView(view: SKView) {
+        if enemy != nil {
+            if let enemyImage = enemy?.getSpriteImage() {
+                target.texture = enemyImage
+            }
+        }
         self.scaleMode = SKSceneScaleMode.ResizeFill
         // 2
         backgroundColor = SKColor.whiteColor()

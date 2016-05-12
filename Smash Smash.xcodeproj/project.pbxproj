@@ -29,6 +29,8 @@
 		674CEFBE1CD1817500AD084D /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFBC1CD17F5200AD084D /* GameStore.swift */; };
 		674CEFBF1CD1817800AD084D /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFBA1CD17F0600AD084D /* Leader.swift */; };
 		674CEFC01CD1817A00AD084D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CEFAB1CD1768500AD084D /* Player.swift */; };
+		67BF665B1CE3EE5B004EE6E7 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF665A1CE3EE5B004EE6E7 /* Enemy.swift */; };
+		67BF665C1CE3EE5B004EE6E7 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF665A1CE3EE5B004EE6E7 /* Enemy.swift */; };
 		93970AA11CD1BD78008B1BF4 /* bieberMusicCut.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA01CD1BD78008B1BF4 /* bieberMusicCut.m4a */; };
 		93970AA31CD1C41A008B1BF4 /* PrinceScream.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA21CD1C41A008B1BF4 /* PrinceScream.m4a */; };
 		93970AA51CD2F20E008B1BF4 /* bieberMusicCut2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 93970AA41CD2F20E008B1BF4 /* bieberMusicCut2.m4a */; };
@@ -82,6 +84,7 @@
 		674CEFB81CD17CEE00AD084D /* LeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderCell.xib; sourceTree = "<group>"; };
 		674CEFBA1CD17F0600AD084D /* Leader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
 		674CEFBC1CD17F5200AD084D /* GameStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		67BF665A1CE3EE5B004EE6E7 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		74B3AAF3D3AEFFABEBB0A446 /* Pods_Smash_SmashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smash_SmashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78F16B622E225592D9BE43 /* Pods-Smash SmashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smash SmashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smash SmashTests/Pods-Smash SmashTests.release.xcconfig"; sourceTree = "<group>"; };
 		93970AA01CD1BD78008B1BF4 /* bieberMusicCut.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bieberMusicCut.m4a; sourceTree = "<group>"; };
@@ -195,6 +198,7 @@
 				674CEFAB1CD1768500AD084D /* Player.swift */,
 				674CEFBA1CD17F0600AD084D /* Leader.swift */,
 				674CEFBC1CD17F5200AD084D /* GameStore.swift */,
+				67BF665A1CE3EE5B004EE6E7 /* Enemy.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -334,7 +338,7 @@
 				TargetAttributes = {
 					674CEF701CD1723400AD084D = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = BMAQ4P3858;
+						DevelopmentTeam = ZL97M23RXJ;
 					};
 					674CEF841CD1723400AD084D = {
 						CreatedOnToolsVersion = 7.3;
@@ -532,6 +536,7 @@
 				674CEFB71CD17CCA00AD084D /* LeaderCellTableViewCell.swift in Sources */,
 				674CEFA51CD1737F00AD084D /* GameViewController.swift in Sources */,
 				674CEFA41CD1737F00AD084D /* GameScene.swift in Sources */,
+				67BF665B1CE3EE5B004EE6E7 /* Enemy.swift in Sources */,
 				674CEFBD1CD17F5200AD084D /* GameStore.swift in Sources */,
 				674CEFB41CD17CB600AD084D /* LeaderboardTableViewController.swift in Sources */,
 				674CEF751CD1723400AD084D /* AppDelegate.swift in Sources */,
@@ -547,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674CEFC01CD1817A00AD084D /* Player.swift in Sources */,
+				67BF665C1CE3EE5B004EE6E7 /* Enemy.swift in Sources */,
 				674CEF8A1CD1723400AD084D /* Smash_SmashTests.swift in Sources */,
 				674CEFBE1CD1817500AD084D /* GameStore.swift in Sources */,
 				674CEFBF1CD1817800AD084D /* Leader.swift in Sources */,
@@ -687,10 +693,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Smash Smash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brheal.Smash-Smash";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -700,10 +708,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Smash Smash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brheal.Smash-Smash";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
