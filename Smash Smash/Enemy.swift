@@ -17,8 +17,7 @@ class Enemy: NSObject {
     
     func getSpriteImage() -> SKTexture? {
         if image != nil {
-            let scaledImage = image!.resizedImageToSize(CGSizeMake(image!.size.width/2, image!.size.height/2))
-            return SKTexture(image: scaledImage.imageByCroppingImage(CGSize(width: 1000.0, height: 1000.0)).roundImage())
+            return SKTexture(image: image!.imageByCroppingImage(CGSize(width: 1000.0, height: 1000.0)).roundImage())
         }
 
         print("Error: Could not resize image")
